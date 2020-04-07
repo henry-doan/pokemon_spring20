@@ -8,7 +8,7 @@ class App extends Component {
     { id: 1, name: 'Pikachu', type: 'electric', level: 5 },
     { id: 2, name: 'Jiggly puff', type: 'fairy', level: 16 },
     { id: 3, name: 'Charmander', type: 'fire', level: 30 },
-    { id: 4, name: 'Mewtwo', type: 'psychic', level: 2 },
+    { id: 4, name: 'Mew', type: 'psychic', level: 2 },
     { id: 5, name: 'Diglett', type: 'ground', level: 43 },
   ]}
 

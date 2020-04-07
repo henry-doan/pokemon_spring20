@@ -2,6 +2,18 @@ import React, { Component } from 'react';
 import { Header } from 'semantic-ui-react';
 import Pokedex from './components/pokemon/Pokedex';
 import PokeForm from './components/pokemon/PokeForm';
+import { AppTitle } from './components/styledComponents/HomeStyle';
+
+const styles = {
+  authorStyle: {
+    color: 'blue',
+    fontSize: '45px',
+    textAlign: 'center',
+  },
+  titleStyles: {
+    color: 'red'
+  }
+}
 
 class App extends Component {
   state = { pokemons: [
@@ -48,6 +60,15 @@ class App extends Component {
         <Header color='red' size='huge' textAlign='center'>
           Pokedex
         </Header>
+        <Header style={{ color: 'green', fontSize: '12px' }}>
+          By Henry Doan
+        </Header>
+        <Header style={styles.authorStyle}>
+          By Henry Doan
+        </Header>
+        <AppTitle large>
+          Made in Utah
+        </AppTitle>
         <PokeForm addPokemon={this.addPokemon} />
         <Pokedex 
           pokemons={pokemons} 
